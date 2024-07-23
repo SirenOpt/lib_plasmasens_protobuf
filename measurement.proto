@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package measurement;
+
+service MeasurementService {
+  rpc SendMeasurement (MeasurementRequest) returns (MeasurementResponse);
+}
+
+message MeasurementRequest {
+  string scan_start_time = 1;
+  float location_index = 2;
+  string position = 3;
+  bytes spectrometer = 4;
+  bytes voltage_full_wave = 5;
+  bytes current_full_wave = 6;
+  bytes thermal = 7;
+  float temp = 8;
+  float pressure = 9;
+  float humid = 10;
+  float mfc = 11;
+  float timestamp = 12;
+  float protocol_index = 13;
+  string message_id = 14;
+
+}
+
+message MeasurementResponse {
+  string status = 1;
+}
+
