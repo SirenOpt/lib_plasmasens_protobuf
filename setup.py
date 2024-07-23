@@ -8,4 +8,6 @@ setup(
         'grpcio',
         'protobuf'
     ],
+    author='Michael O Craig Jr',
+    description='A library for sending measurments',
 )

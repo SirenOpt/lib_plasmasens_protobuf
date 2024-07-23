@@ -1,5 +1,0 @@
-Metadata-Version: 2.1
-Name: measurement_lib
-Version: 0.1
-Requires-Dist: grpcio
-Requires-Dist: protobuf
