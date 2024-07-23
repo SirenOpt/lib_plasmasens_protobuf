@@ -9,5 +9,7 @@ setup(
         'protobuf'
     ],
     author='Michael O Craig Jr',
-    description='A library for sending measurments',
+    description='A library for sending measurements to a server',
+    url='https://github.com/SirenOpt/lib_plasmasens_protobuf',
+
 )
