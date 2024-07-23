@@ -6,4 +6,4 @@ This worked to compile (I originally ran it when the files were all in the direc
 measurement.proto`
 
 To import into your project:
-`pip install git+https://github.com/SirenOpt/lib_plasmasens_protobuf.git`
+`pip install -m git+https://github.com/SirenOpt/lib_plasmasens_protobuf.git`
