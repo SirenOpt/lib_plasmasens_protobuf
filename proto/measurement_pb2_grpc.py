@@ -3,7 +3,7 @@
 import grpc
 import warnings
 
-import measurement_pb2 as measurement__pb2
+from proto import measurement_pb2 as proto_dot_measurement__pb2
 
 GRPC_GENERATED_VERSION = '1.65.4'
 GRPC_VERSION = grpc.__version__
@@ -20,7 +20,7 @@ except ImportError:
 if _version_not_supported:
     warnings.warn(
         f'The grpc package installed is at version {GRPC_VERSION},'
-        + f' but the generated code in measurement_pb2_grpc.py depends on'
+        + f' but the generated code in proto/measurement_pb2_grpc.py depends on'
         + f' grpcio>={GRPC_GENERATED_VERSION}.'
         + f' Please upgrade your grpc module to grpcio>={GRPC_GENERATED_VERSION}'
         + f' or downgrade your generated code using grpcio-tools<={GRPC_VERSION}.'
@@ -41,8 +41,8 @@ class MeasurementServiceStub(object):
         """
         self.SendMeasurement = channel.unary_unary(
                 '/measurement.MeasurementService/SendMeasurement',
-                request_serializer=measurement__pb2.MeasurementRequest.SerializeToString,
-                response_deserializer=measurement__pb2.MeasurementResponse.FromString,
+                request_serializer=proto_dot_measurement__pb2.MeasurementRequest.SerializeToString,
+                response_deserializer=proto_dot_measurement__pb2.MeasurementResponse.FromString,
                 _registered_method=True)
 
 
@@ -60,8 +60,8 @@ def add_MeasurementServiceServicer_to_server(servicer, server):
     rpc_method_handlers = {
             'SendMeasurement': grpc.unary_unary_rpc_method_handler(
                     servicer.SendMeasurement,
-                    request_deserializer=measurement__pb2.MeasurementRequest.FromString,
-                    response_serializer=measurement__pb2.MeasurementResponse.SerializeToString,
+                    request_deserializer=proto_dot_measurement__pb2.MeasurementRequest.FromString,
+                    response_serializer=proto_dot_measurement__pb2.MeasurementResponse.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
@@ -89,8 +89,8 @@ class MeasurementService(object):
             request,
             target,
             '/measurement.MeasurementService/SendMeasurement',
-            measurement__pb2.MeasurementRequest.SerializeToString,
-            measurement__pb2.MeasurementResponse.FromString,
+            proto_dot_measurement__pb2.MeasurementRequest.SerializeToString,
+            proto_dot_measurement__pb2.MeasurementResponse.FromString,
             options,
             channel_credentials,
             insecure,
