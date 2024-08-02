@@ -11,5 +11,5 @@ setup(
     author='Michael O Craig Jr',
     description='A library for sending measurements to a server using gRPC',
     url='https://github.com/SirenOpt/lib_plasmasens_protobuf',
-
+    python_requires='>=3.6',
 )

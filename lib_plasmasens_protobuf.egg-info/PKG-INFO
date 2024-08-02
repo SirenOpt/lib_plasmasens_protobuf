@@ -4,5 +4,6 @@ Version: 0.1
 Summary: A library for sending measurements to a server using gRPC
 Home-page: https://github.com/SirenOpt/lib_plasmasens_protobuf
 Author: Michael O Craig Jr
+Requires-Python: >=3.6
 Requires-Dist: grpcio
 Requires-Dist: protobuf

@@ -6,3 +6,5 @@ lib_plasmasens_protobuf.egg-info/dependency_links.txt
 lib_plasmasens_protobuf.egg-info/requires.txt
 lib_plasmasens_protobuf.egg-info/top_level.txt
 proto/__init__.py
+proto/measurement_pb2.py
+proto/measurement_pb2_grpc.py
