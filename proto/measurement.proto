@@ -21,7 +21,7 @@ message MeasurementRequest {
   float timestamp = 12;
   float protocol_index = 13;
   string message_id = 14;
-
+  string created_time = 15;
 }
 
 message MeasurementResponse {
