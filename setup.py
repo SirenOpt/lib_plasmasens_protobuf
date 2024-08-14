@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='lib_plasmasens_protobuf',
-    version='0.2.2',
+    version='1.5.1',
     packages=find_packages(),
     install_requires=[
         'grpcio',
