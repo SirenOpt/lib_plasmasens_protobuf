@@ -1,0 +1,17 @@
+name: lib_plasmasens_protobuf
+id: "ari:cloud:compass:b05913c1-e011-4272-b948-407bf51e6fa4:component/5ea1aa4a-d3e8-48dd-8cb7-b129387655e4/d133e0c2-acc5-45d0-ad03-2b0aa31b8bd9"
+description: The Protocol buffer interface description
+configVersion: 1
+typeId: LIBRARY
+ownerId: "ari:cloud:identity::team/9dfe8f80-e495-4064-81bc-6f5f18e186b5"
+fields:
+  tier: 4
+links:
+  - name: null
+    type: REPOSITORY
+    url: "https://github.com/SirenOpt/lib_plasmasens_protobuf"
+relationships: {}
+labels: null
+customFields: null
+# Learn more about formatting compass.yml:
+# https://go.atlassian.com/compass-yml-format
