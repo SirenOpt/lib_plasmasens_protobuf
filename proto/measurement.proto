@@ -6,6 +6,14 @@ service MeasurementService {
   rpc SendMeasurement (MeasurementRequest) returns (MeasurementResponse);
 }
 
+message ThermalDataRow {
+  repeated double = 1;
+}
+
+message ThermalMatrix {
+    repeated ThermalDataRow thermalDataRow = 1;
+}
+
 message MeasurementRequest {
   string scan_start_time = 1;
   int32 location_index = 2;
@@ -13,7 +21,7 @@ message MeasurementRequest {
   repeated double spectrometer = 4;
   repeated double voltage_full_wave = 5;
   repeated double current_full_wave = 6;
-  repeated double thermal = 7;
+  repeated ThermalMatrix thermal = 7;
   double temp = 8;
   double pressure = 9;
   double humid = 10;
