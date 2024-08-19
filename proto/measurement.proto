@@ -8,18 +8,18 @@ service MeasurementService {
 
 message MeasurementRequest {
   string scan_start_time = 1;
-  float location_index = 2;
-  string position = 3;
-  bytes spectrometer = 4;
-  bytes voltage_full_wave = 5;
-  bytes current_full_wave = 6;
-  bytes thermal = 7;
+  int32 location_index = 2;
+  repeated float position = 3;
+  repeated float spectrometer = 4;
+  repeated float voltage_full_wave = 5;
+  repeated float current_full_wave = 6;
+  repeated float thermal = 7;
   float temp = 8;
   float pressure = 9;
   float humid = 10;
-  float mfc = 11;
+  int32 mfc = 11;
   float timestamp = 12;
-  float protocol_index = 13;
+  int32 protocol_index = 13;
 }
 
 message MeasurementResponse {
