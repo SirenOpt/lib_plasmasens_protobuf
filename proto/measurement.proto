@@ -20,7 +20,6 @@ message MeasurementRequest {
   float mfc = 11;
   float timestamp = 12;
   float protocol_index = 13;
-  string message_id = 14;
 }
 
 message MeasurementResponse {
