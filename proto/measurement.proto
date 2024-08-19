@@ -9,16 +9,16 @@ service MeasurementService {
 message MeasurementRequest {
   string scan_start_time = 1;
   int32 location_index = 2;
-  repeated float position = 3;
-  repeated float spectrometer = 4;
-  repeated float voltage_full_wave = 5;
-  repeated float current_full_wave = 6;
-  repeated float thermal = 7;
-  float temp = 8;
-  float pressure = 9;
-  float humid = 10;
+  repeated double position = 3;
+  repeated double spectrometer = 4;
+  repeated double voltage_full_wave = 5;
+  repeated double current_full_wave = 6;
+  repeated double thermal = 7;
+  double temp = 8;
+  double pressure = 9;
+  double humid = 10;
   int32 mfc = 11;
-  float timestamp = 12;
+  double timestamp = 12;
   int32 protocol_index = 13;
 }
 
