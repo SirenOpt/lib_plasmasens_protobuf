@@ -21,7 +21,7 @@ message MeasurementRequest {
   repeated double spectrometer = 4;
   repeated double voltage_full_wave = 5;
   repeated double current_full_wave = 6;
-  repeated ThermalMatrix thermal = 7;
+  ThermalMatrix thermal = 7;
   double temp = 8;
   double pressure = 9;
   double humid = 10;
