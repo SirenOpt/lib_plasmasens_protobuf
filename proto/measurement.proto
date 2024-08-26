@@ -7,7 +7,7 @@ service MeasurementService {
 }
 
 message ThermalDataRow {
-  repeated double = 1;
+  repeated double temperature = 1;
 }
 
 message ThermalMatrix {
