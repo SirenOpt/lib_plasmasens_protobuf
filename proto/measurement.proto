@@ -6,15 +6,16 @@ service MeasurementService {
   rpc SendMeasurement (MeasurementRequest) returns (MeasurementResponse);
 }
 
-message ThermalDataRow {
-  repeated double temperature = 1;
-}
 
-message ThermalMatrix {
-    repeated ThermalDataRow thermalDataRow = 1;
-}
 
 message MeasurementRequest {
+  message ThermalDataRow {
+    repeated double temperature = 1;
+  }
+
+  message ThermalMatrix {
+    repeated ThermalDataRow thermalDataRow = 1;
+  }
   string scan_start_time = 1;
   int32 location_index = 2;
   repeated double position = 3;
